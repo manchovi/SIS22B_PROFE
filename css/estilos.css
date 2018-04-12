@@ -1,0 +1,134 @@
+body{
+	/* fondo oscuro e imagen de fondo*/
+	background: #FFF;
+	/* color de la fuente */
+	color: #6E6E6E;
+	/* tamaño de la letra */
+	font-size: 15px;
+}
+
+a{
+	/* quitar la línea a los enlaces */
+	text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+aside#menu{
+    background: #8DA7DA;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;    
+    color: #1548BD;
+    margin-top: 0.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    text-align: justify;
+}
+
+article#contenido{
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+#btn-principal{
+    background:#1548BD; 
+    color:#FFF; 
+}
+
+#btn-secundario{
+     color:#1548BD;
+} 
+
+#cabecera-principal-estudiante{
+
+}
+
+article#fondo-descripcion-tour{
+     background: #FFF;
+     border: 0.9px solid #ccc; 
+     border-radius: 3px;
+     color: #6E6E6E;
+} 
+
+article#fondo-descripcion-datalle-tour{
+     background: #FFF;
+     border: 0.9px solid #ccc; 
+     border-radius: 3px;
+     color: #000;
+}
+
+#body-reporte{
+    /* fondo oscuro e imagen de fondo*/
+    background: #FFF;
+    /* color de la fuente */
+    color: #000;
+    /* tamaño de la letra */
+    font-size: 12px;
+}
+
+div#centrar-img{
+    display: inline-block;
+}
+
+header#cabecera{
+    margin-left: 0;
+    margin-top: 0.5em;
+    
+}
+
+header#logo-fijo{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#icono-menu{
+    color: #FFF;
+}
+
+#img-logo{
+    width: 325px;
+    height: 300px;
+}
+
+#panel-cuerpo{
+    background-color: #f8f8f8;
+    min-height: 390px;
+}
+
+section#cabecera{
+    border: 1px solid #1548BD;
+    border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+}
+
+.badge-danger {
+  background-color: #d43f3a;
+}
+
+.badge-warning {
+background-color: #d58512;
+}
+
+.badge-success {
+background-color: #398439;
+}
+
+.badge-info {
+background-color: #269abc;
+}
+
+.badge-inverse {
+background-color: #333333;
+}

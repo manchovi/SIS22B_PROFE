@@ -1,0 +1,679 @@
+/* reseteo universal */
+
+*{
+	border: 0;
+	margin: 0;
+	/* relleno */
+	padding: 0;
+}
+
+/* mostrar todas en bloque*/
+article, figcaption, figure, footer, header, hgroup, nav, section{
+	display: block;
+}
+
+/* para colocar la fuente que se descargo, esto lo dá el sitio donde se descarga :) */
+@font-face {	
+    font-family: 'geometria';/* nombre con el cual se llamará en el body*/
+    src: url('../fonts/Geometria-Light-webfont.eot');
+    src: url('../fonts/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geometria-Light-webfont.woff2') format('woff2'),
+         url('../fonts/Geometria-Light-webfont.woff') format('woff'),
+         url('../fonts/Geometria-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	/* fondo oscuro e imagen de fondo*/
+	background: #FFF url(../img/fondo.jpg);
+	/* color de la fuente */
+	color: #000;
+	/* tipo de letra */
+	/* font-family: "geometria", Helvetica, Verdana; */
+	/* tamaño de la letra */
+	font-size: 18px;
+}
+
+a{
+	color: #17202A;
+	/* en negrita la letra*/
+	font-weight: bold;
+	/* quitar la línea a los enlaces */
+	text-decoration: none;
+}
+
+/* hover = pasar el ratón sobre el enlace */
+a:hover{
+	color: #FFF;
+    font-weight: bold;
+}
+
+
+/* nuevo */
+audio, iframe, img, video, table{
+    /* para que las imágenes se acoplen al tamaño del dispositivo */
+    max-width: 100%;
+}
+
+/* nuevo contacto */
+fieldset{
+    border: 0.1em solid #FFF;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+figcaption{
+	/* los tamaños se asignan con prueba y error */
+	font-size: 0.85em;
+	padding: 0.25em;
+	text-align: center;
+}
+
+/* nuevo contacto */
+form{
+    width: 100%;
+}
+
+/* nuevo contacto */
+form div{
+    margin: 0.5em;
+}
+
+/* nuevo */
+h2{
+    color: #17202A;
+    font-family: "geometria" Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/* nuevo */
+hr{
+    border: 0.1em solid #FFF;
+    margin: 0.25em 0;
+}
+
+/* nuevo contacto */
+iframe{
+    border-radius: 0.5em;
+}
+
+/* nuevo contacto */
+input[type="email"], [type="number"], [type="text"], [type="date"], [type="password"], textarea, select{
+    background: #FFF;
+    border-radius: 0 0.2em;
+    color: #17202A;
+    font-size: 0.83em;
+    padding: 0.6em;
+    width: 95%;
+}
+
+/* nuevo contacto */
+input[type="email"]:focus, [type="text"]:focus, [type="date"]:focus, textarea:focus, select:focus{
+    background: #F4F6F7;
+}
+
+/* nuevo contacto */
+input[type="submit"]{
+    background: #BDC3C7;
+    border: 0.1em solid #424949;
+    border-radius: 0.25em;
+    /* letra */
+    color: #424949;
+    font-family: "geometria", Helvetica, Verdana;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0.2em;
+    /* para que el efecto no se haga precipitadamente */
+    -ms-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+/* nuevo contacto */
+input[type="submit"]:hover{    
+    background: #000;
+    border: 0.1em solid #000;
+    border-radius: 0 0.5em 0 0.5em;
+    /* para que el efecto no se haga precipitadamente */
+    -ms-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: #BDC3C7;
+    cursor: pointer;
+}
+
+/* nuevo contacto*/
+label{
+    cursor: pointer; 
+    color: #F38020;   
+}
+
+/* para los labels de los panel*/
+label#panel{
+    color: #FFF;
+}
+
+/* nuevo contacto*/
+legend{
+    color: #17202A;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* nuevo */
+ol{
+    padding: 0 2em;
+}
+
+/* "espacio" solo los li qu esten en un ol */
+ol li{
+    padding: 1em 0;
+}
+
+textarea{
+    resize: none;
+}
+
+header, section#contenido, footer{
+	background: #FFF;
+    margin: 0 auto;
+    /* hoy en día solo usamos medidas relativas */
+    max-width: 90%;
+    text-align: center;
+}
+
+header h1, nav{
+    /* ver en línea de bloque, misma altura */
+    display: inline-block;
+    /* 100% del objeto padre, en este caso header */
+    max-width: 100%;
+    /* alineación a la mitad del otro objeto */
+    vertical-align: center;
+    /* vertical-align: top; */
+}
+
+header{
+    padding-bottom: 1em;
+}
+nav ul{
+    /* quitar las etiquetas */
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0.1em;
+    vertical-align: top;
+}
+
+nav a{
+    background: #FFF;
+    border: 0.1em solid #57ABB8;
+    border-radius: 0.25em;
+    /* letra */
+    color: #8A0808;
+    display: block;
+    font-family: "geometria", Helvetica, Verdana;
+    font-size: 1.4em;
+    padding: 0.2em;
+    /* para que el efecto no se haga precipitadamente */
+    -ms-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+
+}
+
+nav a:hover{
+    background: #8A0808;
+    /* dashed = discontínua */
+    border: 0.1em solid #000000;
+    border-radius: 0 0.5em 0 0.5em;
+    color: #FFF;
+    /* para que el efecto no se haga precipitadamente */
+    -ms-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+section#contenido-index{
+    background: #FFF;
+    height: 630px;
+    margin: 0 auto;
+    /* hoy en día solo usamos medidas relativas */
+    max-width: 90%;   
+    padding-top: 3em;
+    text-align: center;
+}
+
+section#principal, aside{
+    background: #8A0808;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0.25em;
+    vertical-align: top;
+    width: 65%;
+}
+
+/* para la disponibilidad */
+section#principal-disponible{
+    background: #797D7F;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0.25em;
+    vertical-align: top;
+    width: 90%;
+}
+
+section#principal-index{
+    background: #797D7F;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0.25em;
+    vertical-align: top;
+    width: 75%;
+}
+
+article#login-index{
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: left;
+    /* respecto al padre section#principal */
+    width: 95%;
+}
+
+aside{
+    width: 30%;
+}
+
+/* tiene nuevo */
+aside img, #img-acerca img, #video-acerca, #img-servicios{
+    border-radius: 0.5em;
+}
+
+/* nuevo acerca */
+article#descripcion-acerca, article#multimedia-acerca{
+    background: #1E6381;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 620px;
+    padding: 0.5em;
+    text-align: justify;
+    vertical-align: top;
+    width: 55%;
+}
+
+
+article#multimedia-acerca{
+    text-align: center;
+    width: 40%;
+}
+
+
+/* para la tabla disponibilidad */
+article#tabla{
+    background: #797D7F;
+    border-radius: 0.2em;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 400px;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: top;
+    width: 95%;
+}
+
+/* para las tablas */
+article#tabla table{
+    border-collapse: collapse;   
+    text-align: center;
+    width: 100%;
+}
+
+/* para el borde del td y th */
+article#tabla td{
+    border: 1px solid #1C2833;
+}
+
+/* para el fondo del th */
+article#tabla th{
+    background: #2C3E50;    
+    border: 1px solid #2C3E50;
+    color: #FFF;
+    height: 40px;
+}
+
+/* para las tablas */
+article#tabla table#tablaHorario{
+    border-collapse: collapse; 
+    font-size: 13px;   
+    text-align: center;
+    width: 100%;
+}
+
+/* cuando el ratón pase por el td libre */
+article#tabla td#libre:hover{
+    background: #A9D0F5;    
+    border-radius: 0.7em;
+    font-weight: bold;
+}
+
+/* cuando el ratón pase por el tr */
+article#tabla tr:hover{
+    background: #2C3E50;    
+    border-radius: 0.7em;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* nuevo servicios */
+section#servicios-principal, section#sercivios-tipos{
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+/* nuevo servicios */
+#img-servicios, article#nuestros-servicios{
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+    width: 40%;
+}
+/* nuevo servicios */
+article#nuestros-servicios, article#servicio1, article#servicio2, article#servicio3{
+    background: #1E6381;
+    border-radius: 0.5em;
+    max-width: 100%;
+    min-height: 275px;
+    padding: 0.5em;
+    text-align: justify;
+    width: 55%;
+}
+
+/* nuevo servicios */
+article#servicio1, article#servicio2, article#servicio3{
+    background: #011E30;
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+}
+
+/* nuevo servicios */
+article#servicio1 div, article#servicio2{
+    text-align: center;
+}
+
+/* nuevo trabajos */
+section#trabajos{
+    background: #797D7F;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* nuevo trabajos */
+div.portafolio{
+    margin: 2em auto;
+}
+
+/* nuevo trabajos */
+div.portafolio article{
+    display: inline;
+    padding: 1em;
+}
+
+/* nuevo contacto */
+section#contacto, section#mapa{
+    background: #011E30;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 0 auto;
+    min-height: 350px;
+    padding: 0.5em;
+    text-align: justify;
+    vertical-align: top;
+    width: 45%;
+}
+
+/* nuevo contacto */
+section#mapa{
+    text-align: center;
+}
+
+/* nuevo contacto */
+article#info-contactanos, article#contactanos{
+    border: .1em solid #FFF;
+    border-radius: 0em 0.5em;
+    margin: 0.5em;
+    min-height: 160px;
+    padding: 0.5em;                
+    text-align: left;
+}
+
+/* para la disponibilidad de las aulas */
+article#disponible{
+    border: .1em solid #FFF;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    min-height: 144px;
+    padding: 0.5em;
+    max-width: 100%;
+}
+
+/* nuevo contacto */
+span.datos-contacto{
+    color: #F90;
+    margin-left: 1em;
+}
+
+footer{
+    color: #000;
+    font-size: 0.85em;
+    padding: 0.75em 0;
+
+}
+
+/* fade = desvanece */
+.fade{
+    -ms-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    /* opacidad 1=100% */
+    opacity: 1;
+    /* para que los navegadores interpreten la opacidad 10=100% */
+    filter:alpha(opacity=10);
+}
+
+.fade:hover{
+    -ms-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    /* opacidad 1=100% */
+    opacity: 0.7;
+    /* para que los navegadores interpreten la opacidad 10=100% */
+    filter:alpha(opacity=7);
+}
+
+/* nuevo trabajos */
+.redonda{
+    /* las imágenes mini miden 100px por 100px */
+    border: 0.1em solid #283747;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* para las imagenes de disponibilidad*/
+.redonda-disponible{
+    /* las imágenes mini miden 100px por 100px */
+    border-radius: 40px;
+    border: 0.1em solid #283747;
+    //box-shadow: 5px 5px 10px rgba(234, 236, 238, 0.5);
+}
+
+#logo{
+    border-radius: 0.25em;
+}
+
+/* --tiene nuevo-- cuando la pantalla sea de 1081px para arriba */
+@media screen and (min-width: 1081px){
+    header h1{
+        text-align: left;
+        width: 45%;
+    }
+
+    nav{
+        text-align: right;
+        width: 50%;
+    }
+}
+
+/* cuando la pantalla sea de 1081px para abajo */
+@media screen and (max-width: 1081px){
+    nav li{
+        font-size: 1.3em;
+    }
+
+    article#galeria-inicio{
+        width: 90%;
+    }
+
+    aside{
+        width: 20%;
+    }
+
+    /* nuevo acerca */
+    article#descripcion-acerca, article#multimedia-acerca, #img-servicios, article#nuestros-servicios{
+        width: 45%;
+    }
+    
+    /* nuevo servicios */
+    article#servicio1, article#servicio2, article#servicio3{
+        width: 30%;
+    }
+
+    /* nuevo trabajos */
+    section#trabajos{
+        max-width: 90%;        
+    }
+
+    /* nuevo trabajos */
+    div.portafolio article{
+        padding: 0.5em;
+    }
+
+    /* nuevo contacto */
+    form{
+        width: 95%;
+    }
+}
+
+/* cuando la pantalla sea de 800px para abajo */
+@media screen and (max-width: 800px){
+    nav li{
+        font-size: 0.95em;
+    }
+
+    article#galeria-inicio{
+        width: 88%;
+    }
+
+    section#contenido-index{
+    height: 400px;
+    }
+
+
+    #img-servicios, article#nuestros-servicios, article#servicio1{
+        display: block;
+        margin: 0 0 0.25em 0;
+        width: 95%;
+    }
+
+    #img-servicios{
+        width: 98%;
+    }
+
+    article#servicio2, article#servicio3{
+        width: 45%;
+    }
+
+    /* nuevo trabajos */
+    section#trabajos{
+        max-width: 95%;
+    }
+
+    /* nuevo trabajos */
+    div.portafolio article{
+        padding: 2em;
+    }
+
+    /* nuevo contacto */
+    section#contacto, section#mapa{
+        display: block;
+        width: 95%;
+    }
+
+    /* nuevo contacto */
+    section#contacto{
+        margin-bottom: 0.2em;
+    }
+
+}
+
+/* cuando la pantalla sea de 600px para abajo */
+@media screen and (max-width: 600px){
+    nav li{
+        display: inline-block;
+        margin: 0px;
+        width: 98%;
+    }
+
+    section#principal, article#descripcion-acerca, article#servicio1, article#servicio2{
+        margin-bottom: 0.2em;
+    }
+    
+    /* hay nuevo */
+    section#principal, aside, article#descripcion-acerca, article#multimedia-acerca, article#servicio1, article#servicio2, article#servicio3{
+        display: block;
+        width: 95%;
+    }
+
+    #img-servicios{
+        display: none;
+    }
+
+    /* nuevo trabajos*/
+    div.portafolio article{
+        display: block;
+        margin: 0.5em auto;
+        padding: 0;
+    }
+}
