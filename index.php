@@ -5,4 +5,6 @@
 	echo "<font color='blue'>Hola ".$nombre."</font>";
 
 	echo $a+$b;
+
+	echo "hola gloria";
 ?>
