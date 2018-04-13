@@ -6,5 +6,7 @@
 
 	echo $a+$b;
 
-	echo "hola gloria";
+	echo "Haciendo cambios 13-04-2018";
+
+	print ($nombre);
 ?>
