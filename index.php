@@ -11,6 +11,6 @@
 	print ($nombre);
 
 	public funcion datosPersonales($nombre, $direccion, $telefono){
-		return datos;
+		return datos
 	}
 ?>

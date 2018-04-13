@@ -1,0 +1,2 @@
+1. vaya al directorio htdocs
+2. copie y pegue los archivos del proyecto en htdocs
