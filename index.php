@@ -9,4 +9,8 @@
 	echo "Haciendo cambios 13-04-2018";
 
 	print ($nombre);
+
+	public funcion datosPersonales($nombre, $direccion, $telefono){
+		return datos;
+	}
 ?>
